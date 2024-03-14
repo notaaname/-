@@ -2,8 +2,9 @@
 #include<string.h>
 int main(){
     char a[100000],b[100000];
-    gets(a);
-    gets(b);
+    gets(a);//这里gets函数的意思就是从输入缓冲区读取字符串或者字符指针
+    gets(b);//char *gets(char *str);函数本身是这个样子
+
     for(int i=0;i<strlen(a);i++)
     {
         if(strchr(b,a[i]))
